@@ -24,6 +24,11 @@ variable region {
   default     = "us-central1"
 }
 
+variable zone {
+  description = "This specifies the zone where to deploy the instance when using the single-zone deployment"
+  default     = ""
+}
+
 variable name {
   description = "Name for the database instance. Must be unique and cannot be reused for up to one week."
 }
@@ -148,3 +153,4 @@ variable availability_type {
   description = "This specifies whether a PostgreSQL instance should be set up for high availability (REGIONAL) or single zone (ZONAL)."
   default     = "ZONAL"
 }
+
